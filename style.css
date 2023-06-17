@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    --lightBlue: #bfcfe1;
+    --cream: #d8e2dc;
+    --text: #e9c46a;
+    --blue: #79a5c6;
+  }
+h2{
+    font-weight: 500;
+}
+h4{
+    font-weight: 500;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+span{
+    font-weight: bold;
+    line-break: auto ;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-xs{
+    font-size: .5em;
+}  
+.text-sm{
+    font-size: .7em;
+    color: var(--blue);
+}
+.text-md{
+    font-size: 1.3em;
+}
+.container{
+    height: auto;
+}
+/* Navbar */
+navbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+.nav img{
+    height: 3em;
+    margin: 1em;
+}
+.nav li{
+    text-decoration: none;
+    display: inline;
+    padding:0 1em;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover{
+    font-weight: 600;
+}
+
+/*page head*/
+.profile{
+    min-height: 100vh;
+} 
+.blue{
+    position: absolute;
+    right: 0;
+    background-color:var(--lightBlue);
+    width: 50%;
+    height: 60%;
+}
+
+.textPara{
+    font-size: 2em;
+    font-weight: semi-bold;
+}
+.profile_img{
+    z-index: 1;
+    width: auto;
+    height: 50%; 
+    box-shadow: 0 0 3rem #adb5bd;
+}
+.button{
+    font-size: 1em;
+    margin: 2em;
+    color: white;
+    padding: 0.1em 1em;
+    background-color: var(--blue);
+    border-color: var(--lightBlue);
+    position: relative;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: white;
+    border-color: var(--blue);
+    color:black;
+}
+.text_intro{
+    width: 75%;
+    height:100vh; 
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}  
+
+/*competences content*/
+.competence{
+    height:100%;
+    padding: 2em 1em;
+    text-align: center;
+}
+.dot{
+    position: absolute;
+    left:0;
+    width: 20%;
+    z-index:-1;
+}
+.competence h1{
+    padding: .2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.flexitems{
+    padding-top: 3rem;
+    align-items: center;
+ }
+ .competence_cards_item{
+    margin: 1rem;
+    width: 22em;
+    height: 30em;
+    padding: 2em;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem #adb5bd;
+}
+.logoBoot{
+    width: 48px;
+}
+.grCard{
+    height: 25%;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardSM{
+    padding: .6em;
+    width: 5.5rem;
+    margin: .2em;
+    border: 1px solid;
+}
+.logoxl{
+    margin-left: 1em;
+    height:5.7em;
+    z-index: 1;
+} 
+
+/*Projects*/
+ .projects{
+    width: 100%;
+    padding: 2em 0;
+    text-align: center;
+    background: var( --blueLight );
+}
+.blue1{
+    position: absolute;
+    background-color:var(--lightBlue);
+    width: 50%;
+    height: 60%;
+    z-index: -1;
+}
+.projects h1{
+    padding: .2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.row1{
+  margin: 2em 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card{
+    width: 27rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem #adb5bd;
+    margin: 1em;
+    border-radius: 8px;
+    background: #fff;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.cardText{
+    width: 330px;
+    padding: 20px;
+    text-align: justify;
+    margin: 0 10px;
+}
+.card a{
+    text-decoration: none;
+    color: var(--lightBlue);
+    font-size: 1rem;
+}
+.card a:hover{
+    color: var(--cream);
+} 
+.dot1{
+    position: absolute;
+    right:0;
+    width: 20%;
+    z-index:-1;
+}
+/* CONTACT */
+.contact{
+    background-color: var(--lightBlue);
+    width: full;
+    padding-top: 3rem ;
+    text-align:center;
+    height: 70vh;
+}
+hr{
+  width:20%;
+}
+.contact_items{
+    width: 30% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact_items button{
+    background-color: black;
+    padding: .2em 1em;
+}
+.contact_items a:hover{
+    -webkit-backface-visibility: hidden; 
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+}
+.dot2{
+    position: absolute;
+    right:0;
+    width: 20%;
+    z-index: 
+}
+/*footer*/
+ footer {
+    height: 2rem;
+    margin-top: -50px;
+    background-color: var(--lightBlue);
+    z-index:1;
+  }
+.logoFooter{
+    margin: .5em;
+    height: 1.5em;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0 1em;
+}
+.footerRight{
+    padding: .6em 0 0 0;
+    width: 50%;
+}
+
+.footerRight a{
+    padding-top:.5em;
+}
+.footerLeft{
+    padding: .5em 0 0 0;
+    width: 50%;
+} 
+
+@media only screen and (max-width: 768px) {
+.blue{
+    top: 0;
+    width: 55%;
+    height: 50%;
+}
+.nav li{
+    padding:0 .2em;
+}
+/* profile */
+.text_intro{
+    width: 100%; 
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 2rem;
+}  
+.profile_img{
+    width:auto;
+    height: 40%;
+}
+.profiletext{
+    margin-top: .5rem;
+}
+/* competence */
+.competence_cards_item{
+    margin: .5rem;
+    height: auto;
+}
+
+/* contact */
+hr{
+    width:50%;
+}
+.contact{
+    height: 50vh;
+}
+.contact_items{
+    width: 60% ;
+}
+/* footer */
+.footerRight{
+    padding: .5em 0;
+    width: 20%;
+}
+.footerLeft{
+    padding: .5em 0;
+    width: 80%;
+} 
+}
+@media only screen and (max-width: 500px) {
+
+.blue{
+    height: 45%;
+    }
+.profile_img{
+    width: auto;
+    height: 30%;
+}
+.contact_items{
+    width: 100% ;
+}
+.footerRight{
+    padding: .5em 0;
+    width: 50%;
+}
+.footerLeft{
+    padding: .5em 0;
+    width: 50%;
+} 
+}
