@@ -18,7 +18,7 @@
   <!-- Links -->
     <link rel="stylesheet" href="style.css">
 
-    
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <link rel="icon" type="favicon-png" href="./image/yangLogo.png">
 </head>
 <body>
@@ -33,6 +33,7 @@
                 </ul>
             </div>
         </navbar>
+        <a class="scrollup">scroll</a>
         <section class="profile">
             <div class="blue"></div>
             
@@ -256,16 +257,26 @@
                     </ul>
                 </div>
             </div>
-            <!-- <div class="footerLeft">
-                <div class="nav">
-                    <ul>
-                        <li><a href="#Skills">SKILLS</a></li>
-                        <li><a href="project">PROJECTS</a></li>
-                        <li><a href="contact">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div> -->
+           
         </footer>   
     </div> 
+    <script>
+        $(document).ready(function(){
+		<!--Smooth Page Scroll to Top-->
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			}); 
+	 
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+		
+	});
+    </script>
 </body>
 </html>
